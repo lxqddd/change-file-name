@@ -1,0 +1,8 @@
+{
+  "name": "change-file-name",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:lxqddd/change-file-name.git",
+  "author": "向阳 <xiangqian_liu@163.com>",
+  "license": "MIT"
+}
