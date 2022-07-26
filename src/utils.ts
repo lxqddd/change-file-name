@@ -1,5 +1,5 @@
 import { lstatSync } from "fs"
-import path, { basename, dirname, extname, isAbsolute, join } from "path"
+import { basename, dirname, extname, isAbsolute, join } from "path"
 import { cwd } from "process"
 
 export const pwd = cwd()

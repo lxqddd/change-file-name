@@ -28,7 +28,6 @@ if (args[0] && args[1]) {
 }
 
 if (options.n) {
-  
   if (isFile(pathName)) {
     renameFileName(pathName, newName)
   } else if (isDir(pathName)) {
