@@ -10,7 +10,7 @@ const cli = cac()
 cli
   .version(pkg.version)
   .option('--name, -n,', 'rename file or directory, the option is the default')
-  .option('--extend, -e', 'change file extend name')
+  .option('--extension, -e', 'change file extension name')
   .example('$ rn ./abc/bcd eee     # director will be renamed ./abc/eee')
   .example('$ rn ./abc.txt bcd     # abc.txt will be renamed bcd.txt')
   .example('$ rn -e ./abc.txt doc  # abc.txt will be renamed abc.doc')
