@@ -18,10 +18,17 @@ cli
 cli.help()
 
 const { options, args } = cli.parse()
+let pathName
+let newName
+if (args[0] && args[1]) {
+  pathName = resolvePath(args[0])
+  newName = args[1].toString()
+} else {
+  throw new Error('options error!')
+}
 
 if (options.n) {
-  const pathName = resolvePath(args[0])
-  const newName = args[1].toString()
+  
   if (isFile(pathName)) {
     renameFileName(pathName, newName)
   } else if (isDir(pathName)) {
@@ -30,8 +37,6 @@ if (options.n) {
     throw new Error('the path is error!')
   }
 } else if (options.e) {
-  const pathName = resolvePath(args[0])
-  const newName = args[1].toString()
   renameExtName(pathName, newName)
 } else if (options.v) {
   console.log('\nversion:', pkg.version, '\n')
