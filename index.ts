@@ -18,6 +18,12 @@ cli
 cli.help()
 
 const { options, args } = cli.parse()
+if (options.v) {
+  console.log('\nversion:', pkg.version, '\n')
+  // @ts-ignore
+  return
+}
+
 let pathName
 let newName
 if (args[0] && args[1]) {
@@ -37,6 +43,4 @@ if (options.n) {
   }
 } else if (options.e) {
   renameExtName(pathName, newName)
-} else if (options.v) {
-  console.log('\nversion:', pkg.version, '\n')
 }
