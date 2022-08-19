@@ -1,4 +1,4 @@
-# change-file-name [![Build Status](https://travis-ci.org/audiojs/audio-play.svg?branch=master)](https://travis-ci.org/audiojs/audio-play)
+# change-file-name
 
 This is a tool to modify the file name or extension.
 
